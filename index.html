@@ -1,0 +1,56 @@
+https://www.gifimages.pics/images/quotes/english/general/happy-diwali-animated-gif-52650-159880.gif
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Diwali!</title>
+  <style>
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: black;
+    }
+    
+    #cracker {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+   
+    @keyframes crackerAnimation {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+      }
+      50% {
+        transform: translate(-50%, -50%) rotate(180deg) scale(1.5);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg) scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Diwali!</h1>
+  
+  <img id="cracker" src="https://www.gifimages.pics/images/quotes/english/general/happy-diwali-animated-gif-52650-159880.gif" alt="Cracker" />
+  
+  <script>
+    
+    window.onload = function() {
+      var cracker = document.getElementById("cracker");
+      cracker.style.display = "block";
+      cracker.style.animation = "crackerAnimation 2s infinite";
+    };
+  </script>
+</body>
+</html>
